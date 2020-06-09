@@ -10,10 +10,10 @@ $(document).ready(function() {
     let outputArray = []
     
     for (let i = 0; i <= countTo; i += countBy) {
-      outputArray.push(" " + [i] + ",");
+      outputArray.push([i]);
       console.log(outputArray);
     }
 
-    $("#output").after(outputArray);
+    $("#output").after(outputArray +  '<br>');
   });
 });
